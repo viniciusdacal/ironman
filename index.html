@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pure css3 Iron Man</title>
+	<style>
+	header img{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 420px !important;
+		margin-top: -18px;
+		z-index: -1;
+
+
+	}
+		
+		.header{
+			width: 420px;
+			height: 657px;
+			margin:0 auto;
+			position: relative;
+		}
+		.skull{
+			width: 366px;
+			height: 650px;
+
+			
+
+			
+			margin: 0 auto;
+			border-radius: 160px 160px 0 0;
+			overflow: hidden;
+		}
+		.skull-format{
+			width: 290px;
+			height: 0;
+			border: 38px solid  transparent;
+			border-top:505px solid rgba(255,255,0,1);
+			border-bottom: 0;
+			/*border-top:505px solid rgba(116,8,3,1);*/
+			display: block;
+		}
+
+		.chin{
+			width: 130px;
+			border: 80px solid transparent;
+			border-top:110px solid rgba(255,255,0,1);
+			margin: 0 auto;
+		}
+		.chin:after{
+			content: '';
+			display: block;
+			width: 130px;
+			height: 10px;
+			border-radius:0 0 50% 50%;
+			background:  rgba(255,255,0,1);
+			margin-top: -5px;
+			
+		}
+		
+
+	</style>
+</head>
+<body>
+	
+	<header class="header">
+		<img src="iron.png" width="600"/>
+		<div class="skull">
+			<div class="skull-format">
+				
+			</div>
+			<div class="chin">
+				
+			</div>
+		</div>
+	</header>
+
+</body>
+</html>
