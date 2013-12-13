@@ -25,12 +25,53 @@
 			height: 657px;
 			margin: 30px auto;
 			position: relative;
-		
+			
 		}
-		
 
 
-		.skull{
+		.skull-forehead{
+			width: 168px;
+			height: 37px;
+			border-radius: 50%;
+			background-color: #000000;
+			position: absolute;
+			left: 50%;
+			margin-left: -84px;
+			margin-top: -14px;
+		}
+		.skull-ears{
+			
+			width: 100%;
+			top: 182px;
+			position: absolute;
+			
+		}
+
+		.skull-ears:before, .skull-ears:after{
+			content: '';
+			display: block;
+			width: 125px;
+			height: 158px;
+			background-color: #000000;
+		}
+
+		.skull-ears:before{
+			float: left;			
+			border-radius: 60px 0px 60px 120px;
+			-webkit-transform: rotate(-10deg);			
+			margin-left: 5px;
+		}
+
+		.skull-ears:after{
+			float: right;
+			border-radius: 0 60px  120px 60px;
+			-webkit-transform: rotate(10deg);
+			background-color: #000000;
+			margin-right: 5px;
+		}
+
+
+		.skull-face{
 			opacity: 1;
 			width: 373px;
 			height: 650px;
@@ -39,11 +80,11 @@
 			border-radius: 182px 182px 250px 250px;
 			overflow: hidden;
 		}
-		.skull-format{
+		.skull-face-format{
 			width: 307px;
 			height: 0;
 			border: 42px solid  transparent;
-			border-top: 505px solid #000;
+			border-top: 505px solid #000000;
 			border-bottom: 0;
 			left: -9px;
 			/*border-top:505px solid rgba(116,8,3,1);*/
@@ -55,7 +96,7 @@
 		
 		
 
-		.skull-format:after, .skull-format:before{
+		.skull-face-format:after, .skull-face-format:before{
 			content: '';
 			display: block;
 			width: 0;
@@ -68,30 +109,30 @@
 		}
 
 		
-		.skull-format:after{
+		.skull-face-format:after{
 			
 			left: -16px;
 			top: -230px;
-			border-right:7px solid  #000;
+			border-right:7px solid  #000000;
 			border-left-width: 0px; 
 			-webkit-transform: rotate(-4.7deg);
 
 		}
 
-		.skull-format:before{
+		.skull-face-format:before{
 			right: -16px;
 			top: -230px;
-			border-left:7px solid  #000;
+			border-left:7px solid  #000000;
 			border-right-width: 0px; 
 			-webkit-transform: rotate(4.7deg);
 			
 		}
 
-		.mandible{
+		.skull-face-mandible{
 			
 			width: 147px;
 			border: 80px solid transparent;
-			border-top: 120px solid #000;
+			border-top: 120px solid #000000;
 			border-bottom: 0;
 			margin: 0 auto;
 			position: relative;
@@ -99,10 +140,10 @@
 
 		
 
-		.chin{
+		.skull-face-chin{
 			width: 146px;
 			height: 25px;
-			background: #000;
+			background: #000000;
 			margin: -14px auto 0 auto;
 			border-radius:0 0 50% 50% ;
 			z-index: 2;
@@ -117,13 +158,13 @@
 	
 	<header class="header">
 		<img src="iron.png" width="600"/>
-		
-		<div class="ears"></div>
-		<div class="skull">
-			<div class="skull-format"></div>
-			<div class="mandible"></div>
-			<div class="chin">
-				<!-- <div class="chin-detail"></div> -->
+		<div class="skull-forehead"></div>
+		<div class="skull-ears"></div>
+		<div class="skull-face">
+			<div class="skull-face-format"></div>
+			<div class="skull-face-mandible"></div>
+			<div class="skull-face-chin">
+				<!-- <div class="skull-face-chin-detail"></div> -->
 			</div>	
 		</div>
 	</header>
