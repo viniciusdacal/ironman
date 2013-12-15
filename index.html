@@ -15,9 +15,6 @@
 		width: 420px !important;
 		margin-top: -15px;
 		z-index: -1;
-		
-		
-
 	}
 		
 		.header{
@@ -160,7 +157,9 @@
 		/**********************************************
 		SKIN (black silhouette)
 		***********************************************/
-
+		.skin{
+			/*opacity: 0.5;*/
+		}
 		.skin-ears{
 			width: 100%;
 			top: 187px;
@@ -172,7 +171,8 @@
 		.skin-ear{
 			width: 120px;
 			height: 154px;
-			background-color: #ff0000;
+			background-color: #670301;
+			overflow: hidden;
 			/*opacity: 0.5;*/
 		}
 
@@ -188,6 +188,47 @@
 			margin-right: 14px;
 			border-radius: 0 56px 149px 60px;
 			-webkit-transform: rotate(10deg);
+		}
+
+		.ear-bright{
+			width: 40px;
+			height: 80px;
+			border-radius: 50%;
+			background-color: #d15d41;
+			margin-top: -7px;
+			background-image: linear-gradient(to bottom, #ce5237, #951208 60%); 
+		}
+
+		.ear-bright:after{
+			content: '';
+			display: block;
+			width: 30px;
+			height: 24px;
+			background-color: #670301;
+			
+			position: absolute;
+			bottom: -6px;
+			border-radius: 50%;
+		}	
+
+		.skin-ear-right .ear-bright{
+			float: right;
+			margin-right: -8px;
+			-webkit-transform: rotate(-10deg);
+
+		}
+		
+		.skin-ear-left .ear-bright{
+			float: left;
+			margin-left: -8px;
+			-webkit-transform: rotate(10deg);
+		}
+
+		.skin-ear-right .ear-bright:after{
+			right: 30px;
+		}
+		.skin-ear-left .ear-bright:after{
+			left: 30px;
 		}
 
 
@@ -213,9 +254,13 @@
 		</div>
 		
 		<div class="skin">
-			<div class="skin-ears">
-				<div class="skin-ear skin-ear-right"></div>
-				<div class="skin-ear skin-ear-left"></div>
+			<div class="skin-ears">				
+				<div class="skin-ear skin-ear-left">
+					<div class="ear-bright"></div>
+				</div>
+				<div class="skin-ear skin-ear-right">
+					<div class="ear-bright"></div>
+				</div>
 			</div>
 
 		</div>
