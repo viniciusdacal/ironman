@@ -15,6 +15,7 @@
 		width: 420px !important;
 		margin-top: -15px;
 		z-index: -1;
+		display: none;
 	}
 		
 		.header{
@@ -144,7 +145,7 @@
 
 		.skull-face-chin{
 			
-			width: 146px;
+			width: 148px;
 			height: 25px;
 			background: #000000;
 			margin: -14px auto 0 auto;
@@ -227,10 +228,82 @@
 		.skin-ear-right .ear-bright:after{
 			right: 30px;
 		}
+
 		.skin-ear-left .ear-bright:after{
 			left: 30px;
 		}
 
+
+		.skin-face{
+			/*opacity: 1;*/
+			position: absolute;
+			width: 348px;
+			height: 624px;			
+			border-radius: 182px 182px 250px 250px;
+			overflow: hidden;
+			top: 10px;
+			left: 50%;
+			margin-left: -174px;
+		}
+
+		.skin-face-format{
+			width: 290px;
+			height: 0;
+			border: 44px solid  transparent;
+			border-top: 494px solid #7b0600;
+			border-bottom: 0;
+			left: -15px;
+			display: block;
+			position: relative;
+		}
+
+		.skin-face-mandible{
+			
+			width: 128px;
+			border: 81px solid transparent;
+			border-top: 112px solid #7b0600;
+			border-bottom: 0;
+			margin: 0 auto;
+			position: relative;
+
+		}
+		
+		.skin-face-chin{
+			width: 97px;			
+			bottom: 15px;
+			left: 101px;			
+			position: absolute;
+			border: 24px solid transparent;
+			border-bottom: 26px solid #000000;
+			border-top: 0;
+		}
+
+		.skin-face-chin:before{
+			content: '';
+			display: block;
+			width: 96px;			
+			top:2px;
+			left: -18px;			
+			position: absolute;
+			border: 19px solid transparent;
+			border-bottom: 22px solid #800000;
+			border-top: 0;
+			border-radius: 20px;
+		}
+		.skin-face-chin:after{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 11px;
+			left: -15px;
+			width: 128px;
+			height: 22px;
+			border-radius: 50%;
+			background-color: #800000;
+		}
+
+		
+		
 
 
 		
@@ -262,6 +335,14 @@
 					<div class="ear-bright"></div>
 				</div>
 			</div>
+
+			<div class="skin-face">
+				<div class="skin-face-format"></div>
+				<div class="skin-face-mandible"></div>
+				<div class="skin-face-chin">
+					<!-- <div class="skin-face-chin-detail"></div> -->
+				</div>	
+			</div>		
 
 		</div>
 
