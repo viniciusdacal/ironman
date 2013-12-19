@@ -16,7 +16,6 @@
 		margin-top: -15px;
 		z-index: -1;
 		/*display: none;*/
-		display: none;
 	}
 		
 		.header{
@@ -34,7 +33,7 @@
 		
 		.skull{
 
-			/*opacity: 0.5;*/
+			opacity: 0.5;
 
 		}
 
@@ -159,7 +158,7 @@
 		SKIN (black silhouette)
 		***********************************************/
 		.skin{
-			/*opacity: 0.5;*/
+			opacity: 0.5;
 		}
 		.skin-ears{
 			width: 100%;
@@ -312,6 +311,7 @@
 			top: 65px;
 			left: 10px;
 			overflow: hidden;
+			z-index: 1;
 		}		
 
 		
@@ -332,6 +332,18 @@
 			width: 322px;
 			height: 79px;
 			background-color: #d7b762;
+			border-radius: 50%;
+		}
+
+		.gold-ball:after{
+			position: absolute;
+			content: '';
+			display: block;
+			top: 3px;
+			left: 2px;
+			width: 322px;
+			height: 79px;
+			background-color: #BD8616;
 			border-radius: 50%;
 		}
 
@@ -359,6 +371,21 @@
 			margin-top: -40px;
 		}
 
+		.gold-top:after{
+			content: '';
+			display: block;
+			position: absolute;
+			width: 245px;
+			height: 0;
+			top: -97px;
+			left: -16px;
+			border: 33px solid transparent;
+			border-top: 137px solid #BD8616;
+			border-bottom: 0;
+			margin-top: -40px;
+			z-index: 4;
+		}
+
 		.gold-middle{
 			position: relative;
 			width: 278px;
@@ -379,6 +406,21 @@
 			border-bottom: 100px solid #d7b762;
 			margin-left:-29px ;
 			border-top: 0;
+		}
+		
+
+		.gold-middle:after{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 20px;
+			width: 245px;
+			border: 26px solid transparent;
+			border-bottom: 105px solid #BD8616;
+			margin-left:-29px ;
+			border-top: 0;
+			z-index: 3
 		}
 		
 
@@ -440,6 +482,127 @@
 			border-bottom: 0;
 			
 		}
+
+		.gold-bottom:after{
+			position: absolute;
+			bottom:15px;
+			left: -72px;
+			content: '';
+			display: block;
+			width: 119px;
+			border: 89px solid transparent;
+			border-top: 183px solid #BD8616;
+			border-bottom: 0;
+			
+		}
+
+
+		.gold-face-over{
+			position: absolute;
+			width: 322px;
+			height: 150px;
+			top: 30px;
+			left: 2px;
+			z-index: 3;
+		}
+
+		.trik{
+			position: absolute;
+			width: 7px;
+			height: 20px;
+			top: 3px;
+			background-color: #d7b762;
+		}
+
+		.trik-left{
+			left: 1px;
+			z-index: 3;
+			-webkit-transform: rotate(-14deg);
+			border-radius: 80% 0 0 0;
+		}
+
+		.trik-right{
+			right: 1px;
+			z-index: 3;
+			-webkit-transform: rotate(14deg);
+			border-radius:  0 80% 0 0;
+		}
+
+		.mouth{
+			position: absolute;
+			left: 74px;
+			bottom: 99px;
+		}
+		.black-top-stroke{
+			position: relative;
+			width: 131px;
+			margin-bottom: -14px;
+			border: 16px solid transparent;
+			border-right-width: 15px;
+			margin-left: 18px;
+			border-bottom: 28px solid #000000;
+			border-radius: 15px;
+			z-index: 1;
+		}
+		.black-top-stroke:after{
+			content: '';
+			display: block;
+			left: -10px;
+			top: 30px;
+			position: relative;
+			width: 125px;
+			border: 13px solid transparent;
+			border-bottom: 25px solid #B88220;
+		}
+
+		.mouth-bottom{
+			position: absolute;
+			width: 144px;
+			height: 69px;
+			background-color: #B88220;
+			z-index: 0;
+			top: 43px;
+			left: 28px;
+		}
+
+		.mouth-triangle{
+			position: absolute;
+			width: 0;
+			height: 0;
+			border: 75px solid transparent;
+
+			border-bottom-width: 35px;
+			top: -41px;
+		}
+
+		.mouth-triangle:after{
+			content: '';
+			display: block;
+			position: absolute;
+		}
+
+		.mouth-triangle-left{			
+			border-right: 29px solid #000;
+			border-left: 0;
+			left: -29px;
+
+		}
+
+		.mouth-triangle-left:after{			
+			border-right: 29px solid #B88220;
+			border-left: 0;
+			right: 0;
+
+		}
+
+		.mouth-triangle-right:after{			
+			border-left: 29px solid #B88220;
+			border-right: 0;
+			right: -26px;
+
+		}
+
+
 		
 	</style>
 </head>
@@ -478,14 +641,25 @@
 				</div>	
 
 				<div class="skin-face-front">
-					<div class="clip-gold">						
+					<div class="clip-gold">	
+						<div class="gold-face-over">
+							<div class="trik trik-left"></div>
+							<div class="trik trik-right"></div>
+						</div>
 						<div class="gold-ball"></div>
 						<div class="gold-top"></div>						
 						<div class="gold-middle"></div>						
 						<div class="gold-middle-bottom"></div>						
 						<div class="gold-bottom"></div>						
 					</div>
+					<div class="mouth">
 
+						<div class="black-top-stroke"></div>
+						<div class="mouth-bottom">
+							<div class="mouth-triangle mouth-triangle-left"></div>
+							<div class="mouth-triangle mouth-triangle-right"></div>
+						</div>
+					</div>
 				</div>
 			</div>		
 
