@@ -17,7 +17,7 @@
 		z-index: 10;
 		opacity: 0.5;
 
-		display: none;
+		/*display: none;*/
 	}
 		
 		.header{
@@ -735,7 +735,7 @@
 <body>
 	
 	<header class="header">
-		<img src="iron.png" width="600"/>
+		<!-- <img src="iron.png" width="600"/> -->
 
 		<div class="skull">
 			<div class="skull-forehead"></div>
@@ -744,12 +744,154 @@
 				<div class="skull-face-format"></div>
 				<div class="skull-face-mandible"></div>
 				<div class="skull-face-chin">
-					<!-- <div class="skull-face-chin-detail"></div> -->
 				</div>	
 			</div>			
 		</div>
+
+		<style>
+
+			.skin-forehead{
+				z-index: 5;
+				top: -5px;
+				left: 50%;
+				margin-left: -74px;
+				position: absolute;
+				width: 148px;
+				height: 300px;
+				border-radius: 30px;
+				overflow: hidden;
+
+			}
+			.forehead-top{
+				position: relative;
+				width: 120px;
+				border: 14px solid transparent;
+				border-top: 110px solid #000;
+				border-bottom: 0;
+			}
+
+			.forehead-top:before{
+				position: absolute;
+				bottom: 2px;
+				left: -10px;
+				content: '';
+				display: block;
+				width: 110px;
+				border: 15px solid transparent;
+				border-top: 114px solid #bf1e0f;
+				border-bottom: 0;
+			}
+
+			.forehead-top:after{
+				position: absolute;
+				bottom: 4px;
+				content: '';
+				display: block;
+				width: 100px;
+				border: 12px solid transparent;
+				border-top: 111px solid #780903;
+				border-bottom: 0;
+				left: -2px;
+			}
+
+			.forehead-top-bottom{
+				position: absolute;
+				border: 60px solid transparent;
+				border-bottom: 14px solid #000;
+				border-top: 0;
+				bottom: 2px;
+				z-index: 3;
+			}
+
+			.forehead-top-bottom:after{
+				content: '';
+				display: block;
+				position: absolute;
+				border: 60px solid transparent;
+				border-bottom: 13px solid #9d1007;
+				border-top: 0;
+				left: -60px;
+				bottom: -16px;
+			}
+			.forehead-middle{
+				position: relative;
+				z-index: 3;
+				border: 12px solid transparent;
+				border-top: 124px solid #000;
+				border-bottom: 0;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: -1px;
+				width: 96px;
+			}
+
+			.forehead-middle:after{
+				content: '';
+				position: absolute;
+				display: block;
+				bottom: 2px;
+				z-index: 3;
+				border: 12px solid transparent;
+				border-top: 122px solid #820c05;
+				border-bottom: 0;
+				left: -7px;
+				width: 87px;
+			}
+
+			.forehead-bottom{
+				position: relative;
+				z-index: 3;
+				width: 0;
+				margin: 0 auto;
+				border: 48px solid transparent;
+				border-top: 23px solid #000;
+				border-bottom: 0;
+			}
+
+			.forehead-bottom:before{
+				content: '';
+				display: block;
+				position: absolute;
+				width: 0;
+				bottom: 5px;
+				left: -43px;
+				border: 43px solid transparent;
+				border-right-width:  44px;
+				border-top: 20px solid #820c05;
+				border-bottom: 0;
+			}
+
+			.forehead-bottom:after{
+				content: '';
+				display: block;
+				position: absolute;
+				width: 0;
+				bottom: 5px;
+				left: -36px;
+				border: 37px solid transparent;
+				border-top: 17px solid #bf1b0d;
+				border-bottom: 0;
+			}
+
+		</style>
 		
 		<div class="skin">
+			
+			<!-- FOREHEAD -->
+			<div class="skin-forehead">
+				<div class="forehead-top">
+					<div class="forehead-top-bottom"></div>
+				</div>
+				
+				<div class="forehead-middle">
+					<div class="forehead-middle-center">
+						<div class="forehead-middle-center-detail-top"></div>
+					</div>
+				</div>
+				<div class="forehead-bottom"></div>
+			</div>
+			<!--END FOREHEAD -->
+
 			<div class="skin-ears">				
 				<div class="skin-ear skin-ear-left">
 					<div class="ear-bright"></div>
