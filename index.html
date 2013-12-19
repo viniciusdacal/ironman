@@ -757,7 +757,7 @@
 				margin-left: -74px;
 				position: absolute;
 				width: 148px;
-				height: 300px;
+				height: 256px;
 				border-radius: 30px;
 				overflow: hidden;
 
@@ -861,16 +861,69 @@
 				border-bottom: 0;
 			}
 
-			.forehead-bottom:after{
+			
+
+			/**/
+
+
+			.forehead-front{
+				position: absolute;
+				z-index: 10;
+				
+				width: 78px;
+				border: 10px solid transparent;
+				border-top: 121px solid #000;
+				border-bottom: 0;
+				top: 113px;
+				left: 25px;
+			}
+
+			.forehead-front:after{
 				content: '';
 				display: block;
 				position: absolute;
-				width: 0;
-				bottom: 5px;
-				left: -36px;
-				border: 37px solid transparent;
-				border-top: 17px solid #bf1b0d;
+				z-index: 10;
+				
+				width: 74px;
+				border: 10px solid transparent;
+				border-top: 119px solid #9D1007;
 				border-bottom: 0;
+				bottom: 0px;
+				left: -8px;
+			}
+
+			.forehead-front-bottom{
+				position: absolute;
+				width: 0;
+				
+				top:0px;
+				border: 37px solid transparent;
+				left: 2px;
+				border-top: 17px solid #9D1007;
+				border-bottom: 0;
+			}
+
+			.forehead-front-top{
+				position: absolute;
+				top: -126px;
+				left: -10px;
+				border: 49px solid transparent;
+				border-bottom: 5px solid #000;
+				border-top: 0;
+
+			}
+
+			.forehead-front-top:after{
+				content: '';
+				display: block;
+				position: absolute;
+				
+				left: -47px;
+				top: 2px;
+				border: 47px solid transparent;
+				border-bottom: 5px solid #9D1007;
+				border-top: 0;
+
 			}
 
 		</style>
@@ -884,11 +937,14 @@
 				</div>
 				
 				<div class="forehead-middle">
-					<div class="forehead-middle-center">
-						<div class="forehead-middle-center-detail-top"></div>
-					</div>
+					
 				</div>
 				<div class="forehead-bottom"></div>
+				<div class="forehead-front">
+					<div class="forehead-front-top"></div>	
+					<div class="forehead-front-bottom"></div>	
+				</div>
+
 			</div>
 			<!--END FOREHEAD -->
 
