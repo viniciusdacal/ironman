@@ -727,30 +727,7 @@
 		}
 
 
-
-
-		
-	</style>
-</head>
-<body>
-	
-	<header class="header">
-		<!-- <img src="iron.png" width="600"/> -->
-
-		<div class="skull">
-			<div class="skull-forehead"></div>
-			<div class="skull-ears"></div>
-			<div class="skull-face">
-				<div class="skull-face-format"></div>
-				<div class="skull-face-mandible"></div>
-				<div class="skull-face-chin">
-				</div>	
-			</div>			
-		</div>
-
-		<style>
-
-			.skin-forehead{
+		.skin-forehead{
 				z-index: 5;
 				top: -5px;
 				left: 50%;
@@ -926,6 +903,169 @@
 
 			}
 
+		
+	</style>
+</head>
+<body>
+	
+	<header class="header">
+		<!-- <img src="iron.png" width="600"/> -->
+
+		<div class="skull">
+			<div class="skull-forehead"></div>
+			<div class="skull-ears"></div>
+			<div class="skull-face">
+				<div class="skull-face-format"></div>
+				<div class="skull-face-mandible"></div>
+				<div class="skull-face-chin">
+				</div>	
+			</div>			
+		</div>
+
+		<style>
+
+			.skin-wrapper-eyes{
+				position: absolute;
+				z-index: 5;
+				top: 310px;
+				left: 50%;
+				margin-left: -137px;
+				width: 274px;
+				height: 69px;
+				overflow: hidden;
+			}
+
+			.eyebrow{
+				position: absolute;
+				z-index: 5;
+				bottom: 26px;
+				width: 553px;
+				margin-left: -281px;
+				left: 50%;
+				height: 501px;
+				border-radius: 21%;
+				float: left;
+				-webkit-transform: rotate(-32deg) skew(27deg);
+				background-color: #000000;
+				overflow: hidden;
+			}
+
+			.eyebrow:before{
+				content: '';
+				display: block;
+				margin-top: -3px;
+				margin-left: 3px;
+				width: 580px;
+				height: 501px;
+				border-radius: 22%;
+				float: left;
+				background-color: #b26d00;
+
+			}
+
+			.eyebrow:after{
+				position: absolute;
+				content: '';
+				display: block;
+				margin-top: -3px;
+				margin-left: 3px;
+				width: 580px;
+				height: 501px;
+				border-radius: 24%;
+				float: left;
+				background-color: #BD8616;
+
+			}
+
+			.mini-eyebrow{
+				position: absolute;
+				bottom: 15px;
+				left: 50%;
+				margin-left: -45px;
+				width: 90px;
+				height: 12px;
+				background-color: #b26d00;
+				border-radius: 50%;
+			}
+
+			.mini-eyebrow:before{
+				content: '';
+				display: block;
+				width: 88px;
+				margin-left: 1px;
+				height: 10px;
+				background-color: #000000;
+				border-radius: 50%;
+			}
+
+			.mini-eyebrow:after{
+				position: absolute;
+				top: 0;
+				content: '';
+				display: block;
+				width: 88px;
+				margin-left: 1px;
+				height: 8px;
+				background-color: #b26d00;
+				border-radius: 50%;
+			}
+			.eyes{
+				z-index: 3;
+				width: 100%;
+			}
+			
+			.eye{
+				background-color: #fff;
+				background: radial-gradient( #fffefe 30%,  #76daec 120%); 
+				width: 90px;
+				height: 55px;
+				border: 5px solid #000;
+				position: absolute;
+
+			}
+
+			.eye-left{
+				left: -4px;
+				border-radius: 0px 0 30px 49px;
+				-webkit-transform: rotate(13deg);
+
+			}
+
+			.eye-right{
+				right: -4px;
+				border-radius: 0px 0 49px 30px;
+				-webkit-transform: rotate(-13deg);
+
+			}
+
+			.eyes-bright{
+				z-index: 10;
+				position: absolute;
+				top: 350px;
+				left: 50%;
+				margin-left: -137px;
+				width: 274px;
+			}
+
+			.bright{
+				position: absolute;
+				width: 30px;
+				height: 0px;
+				border-radius: 50%;
+				box-shadow: 0px 0px 130px 45px #00ebff;
+
+			}	
+
+			.bright-left{
+				left: 30px;
+			}
+
+			.bright-right{
+				right: 30px;
+			}
+
+
+
 		</style>
 		
 		<div class="skin">
@@ -936,9 +1076,7 @@
 					<div class="forehead-top-bottom"></div>
 				</div>
 				
-				<div class="forehead-middle">
-					
-				</div>
+				<div class="forehead-middle"></div>
 				<div class="forehead-bottom"></div>
 				<div class="forehead-front">
 					<div class="forehead-front-top"></div>	
@@ -947,6 +1085,19 @@
 
 			</div>
 			<!--END FOREHEAD -->
+
+			<div class="skin-wrapper-eyes">
+				<div class="eyebrow"></div>
+				<div class="mini-eyebrow"></div>
+				<div class="eyes">
+					<div class="eye eye-left"></div>
+					<div class="eye eye-right"></div>
+				</div>
+			</div>
+			<div class="eyes-bright">
+				<div class="bright bright-left"></div>
+				<div class="bright bright-right"></div>
+			</div>
 
 			<div class="skin-ears">				
 				<div class="skin-ear skin-ear-left">
